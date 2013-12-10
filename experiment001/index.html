@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pleigh</title>
+</head>
+<body>
+  <img src="imgs/eagle.png" alt="Eagle" id="eagle">
+  <img src="imgs/bomb.png" alt="Bomb" id="bomb" style="margin-top: 2%; margin-left: 5%; display: none;">
+</body>
+<script src="js/jquery2.0.3.js"></script>
+<script>
+  $( "#eagle" ).animate({
+    opacity: 0.25,
+    marginLeft: "0.6in",
+    left: "+=200"
+  }, 1000, function() {
+    // Animation complete.
+    $("#bomb").slideDown();
+  });
+</script>
+</html>
